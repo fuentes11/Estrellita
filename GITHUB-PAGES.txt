@@ -1,0 +1,13 @@
+ESTRELLITA - PUBLICAR EN GITHUB PAGES
+
+Repositorio recomendado: estrellita
+URL esperada: https://endo-repo.github.io/estrellita/
+
+1. Crea un repositorio en GitHub llamado estrellita.
+2. Sube TODO el contenido de esta carpeta a la rama main.
+3. En GitHub: Settings > Pages > Source > GitHub Actions.
+4. Abre la pestaña Actions y espera a que "Deploy Estrellita to GitHub Pages" termine en verde.
+5. Ve a Settings > Pages > Visit site.
+
+IMPORTANTE SOBRE PRIVACIDAD:
+Un sitio normal de GitHub Pages es público en Internet. No pongas fotos, cartas o datos que no quieras que puedan ser accesibles mediante el enlace. Publicación privada de Pages requiere opciones empresariales específicas de GitHub.

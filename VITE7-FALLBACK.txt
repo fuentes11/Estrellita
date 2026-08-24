@@ -1,0 +1,3 @@
+Estrellita v0.3.1 fallback
+Uses Vite 7 + @vitejs/plugin-react 5 to avoid Vite 8/Rolldown native binding issues on Windows.
+Run: npm install && npm run dev
