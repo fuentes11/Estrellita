@@ -25,7 +25,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
     title: 'Nuestra primera vuelta al Sol.',
     text: 'Un año de conocernos más, acompañarnos y guardar momentos que poco a poco comenzaron a convertirse en nuestra propia constelación.',
     note: 'Capítulo 02 · Primer aniversario',
-    image:'${BASE}memories/2024.jpeg'
+    image:'../../memories/2024.jpeg'
   },
   {
     year: 2025,
