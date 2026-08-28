@@ -252,7 +252,7 @@ function App() {
       <section className="same-sky section-wrap" id="juntos">
         <SectionHeading index="03" kicker="EL MISMO CIELO" title="Dos lugares. Una estrella." />
         <div className="same-sky-intro">
-          <p>No importa cuántos kilómetros haya entre nosotros. Polaris sigue ocupando el mismo lugar especial en nuestro cielo.</p>
+          <p>No importa cuántos kilómetros haya entre nosotros. Polaris es la forma fisica de recordarnos que no hay distancia que nos pueda separar.</p>
           <span>✦</span>
         </div>
         <div className="places-card surface-card">
