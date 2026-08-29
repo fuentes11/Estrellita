@@ -17,7 +17,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
     title: 'Aquí empezó nuestra historia.',
     text: 'El año en que comenzamos a escribir algo que hoy sigo eligiendo. Desde aquí, cada vuelta al Sol empezó a tener un significado distinto.',
     note: 'Capítulo 01 · Nuestro inicio',
-    image:'${BASE}2023.jpeg'
+    image:'${BASE}memories/2023.jpeg'
   },
   {
     year: 2024,
@@ -25,7 +25,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
     title: 'Nuestra primera vuelta al Sol.',
     text: 'Un año de conocernos más, acompañarnos y guardar momentos que poco a poco comenzaron a convertirse en nuestra propia constelación.',
     note: 'Capítulo 02 · Primer aniversario',
-    image:'/2024.jpeg'
+    image:'${BASE}memories/2024.jpeg'
   },
   {
     year: 2025,
@@ -33,7 +33,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
     title: 'Dos años, y todavía escogiendo la misma luz.',
     text: 'La historia siguió creciendo. Con días fáciles, días difíciles y esa certeza bonita de saber que todavía había mucho cielo por compartir.',
     note: 'Capítulo 03 · Segundo aniversario',
-    image:'../../public/2025.jpeg'
+    image:'${BASE}memories/2025.jpeg'
   },
   {
     year: 2026,
@@ -41,6 +41,6 @@ export const STORY_CHAPTERS: StoryChapter[] = [
     title: 'Tres años bajo el mismo cielo.',
     text: 'Hoy miro hacia atrás y veo todo lo que hemos recorrido desde 2023. (incluso antes) Y cuando miro hacia arriba, Polaris sigue ahí para recordarme que esta historia todavía tiene muchas noches por delante.',
     note: 'Capítulo 04 · Tercer aniversario',
-    image:'./2026.jpeg'
+    image:'${BASE}memories/2026.jpeg'
   }
 ]
