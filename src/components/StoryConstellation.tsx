@@ -58,6 +58,9 @@ export function StoryConstellation() {
             <i />
             <small>{chapter.note}</small>
           </div>
+<p style={{ color: 'red', fontSize: '18px', fontWeight: 'bold' }}>
+    DEBUG: {chapter.image ?? 'SIN IMAGEN'}
+  </p>
           <h3>{chapter.title}</h3>
           <p>{chapter.text}</p>
           <div className="memory-progress" aria-label={`Capítulo ${STORY_CHAPTERS.indexOf(chapter) + 1} de ${STORY_CHAPTERS.length}`}>
