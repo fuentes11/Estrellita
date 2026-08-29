@@ -37,9 +37,7 @@ export function StoryConstellation() {
       </div>
 
       <article className="memory-card surface-card" key={chapter.year}>
-        <p style={{ color: 'white', position: 'relative', zIndex: 100 }}>
-  IMAGE DEBUG: {chapter.image || 'SIN IMAGEN'}
-</p>
+        
 <div className={`memory-visual ${chapter.image ? 'has-image' : ''}`}>
           {chapter.image ? (
             <img src={chapter.image} alt={`Recuerdo de ${chapter.year}`} />
@@ -58,9 +56,7 @@ export function StoryConstellation() {
             <i />
             <small>{chapter.note}</small>
           </div>
-<p style={{ color: 'red', fontSize: '18px', fontWeight: 'bold' }}>
-    DEBUG: {chapter.image ?? 'SIN IMAGEN'}
-  </p>
+
           <h3>{chapter.title}</h3>
           <p>{chapter.text}</p>
           <div className="memory-progress" aria-label={`Capítulo ${STORY_CHAPTERS.indexOf(chapter) + 1} de ${STORY_CHAPTERS.length}`}>
