@@ -14,7 +14,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
   {
     year: 2023,
     anniversary: 'El comienzo',
-    title: 'Aquí empezó nuestra historia.',
+    title: 'Aquí empezó nuestra historia prureba1.',
     text: 'El año en que comenzamos a escribir algo que hoy sigo eligiendo. Desde aquí, cada vuelta al Sol empezó a tener un significado distinto.',
     note: 'Capítulo 01 · Nuestro inicio',
     image:'${BASE}memories/2023.jpeg'
