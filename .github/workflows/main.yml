@@ -2,7 +2,7 @@ name: Deploy Estrellita to GitHub Pages
 
 on:
   push:
-    branches: ['jason']
+    branches: ['Jason']
   workflow_dispatch:
 
 permissions:
