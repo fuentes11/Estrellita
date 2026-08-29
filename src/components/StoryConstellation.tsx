@@ -37,7 +37,10 @@ export function StoryConstellation() {
       </div>
 
       <article className="memory-card surface-card" key={chapter.year}>
-        <div className={`memory-visual ${chapter.image ? 'has-image' : ''}`}>
+        <p style={{ color: 'white', position: 'relative', zIndex: 100 }}>
+  IMAGE DEBUG: {chapter.image || 'SIN IMAGEN'}
+</p>
+<div className={`memory-visual ${chapter.image ? 'has-image' : ''}`}>
           {chapter.image ? (
             <img src={chapter.image} alt={`Recuerdo de ${chapter.year}`} />
           ) : (
