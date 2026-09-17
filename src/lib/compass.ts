@@ -8,15 +8,37 @@ type IOSDeviceOrientationEvent = DeviceOrientationEvent & {
   webkitCompassHeading?: number
 }
 
+
+
 type OrientationConstructor = typeof DeviceOrientationEvent & {
-  requestPermission?: () => Promise<'granted' | 'denied'>
+  requestPermission?: (absolute?: boolean) => Promise<'granted' | 'denied'>
 }
 
 export async function requestCompassPermission() {
-  const Orientation = DeviceOrientationEvent as OrientationConstructor
+  if (!window.isSecureContext) {
+    throw new Error('La brújula requiere una conexión HTTPS.')
+  }
+
+  if (!('DeviceOrientationEvent' in window)) {
+    throw new Error('Este dispositivo o navegador no ofrece acceso a la brújula.')
+  }
+
+  const Orientation = window.DeviceOrientationEvent as OrientationConstructor
+
   if (typeof Orientation.requestPermission === 'function') {
-    const result = await Orientation.requestPermission()
-    if (result !== 'granted') throw new Error('Permiso de orientación rechazado.')
+    let result: 'granted' | 'denied'
+
+    try {
+      // true también solicita orientación absoluta / magnetómetro
+      result = await Orientation.requestPermission(true)
+    } catch {
+      // Compatibilidad con implementaciones anteriores
+      result = await Orientation.requestPermission()
+    }
+
+    if (result !== 'granted') {
+      throw new Error('Debes permitir acceso a los sensores de movimiento.')
+    }
   }
 }
 
